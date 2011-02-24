@@ -5,6 +5,7 @@ module Restfulie::Client::HTTP
     
     def links
       r = link_header_to_array
+			LinkHeader.debug r
       Medie::Xml::Links.new(r)
     end
     

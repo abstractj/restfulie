@@ -12,7 +12,8 @@ group :development do
   gem "yard"
 end
 
-group :test do  
+group :test do 
+  gem "debuggie", :git => "https://github.com/guilhermesilveira/debuggie.git"
   gem "rspec-rails", ">= 2.3.0"
   gem "rcov"
   gem "sinatra"
